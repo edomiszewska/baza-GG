@@ -12,7 +12,7 @@ create TABLE klienci(
 klienci_id int unsigned primary key not null AUTO_INCREMENT,
 imie varchar(30),
 nazwisko varchar(30),
-pesel int(11) unsigned not null
+pesel bigint(11) unsigned not null
 );
 
 create TABLE wizyty(
