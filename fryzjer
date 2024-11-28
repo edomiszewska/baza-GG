@@ -19,7 +19,7 @@ create TABLE wizyty(
 wizyty_id int unsigned primary key not null AUTO_INCREMENT,
 nazwa varchar(50),
 cena decimal(10,2),
-data timestamp,
+data date,
 klienci_id int unsigned not null,
 pracownicy_id int unsigned not null,
     FOREIGN key (klienci_id) references klienci(klienci_id) on delete CASCADE on UPDATE CASCADE,
